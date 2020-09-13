@@ -1,0 +1,27 @@
+<%= render partial: 'frameworks' %>
+
+<nav>
+<ul class="navbar right">
+<li>
+<%= link_to  "New Article", new_article_path %>
+</li>
+<li>
+<a href="#">Sign up</a>
+</li>
+<li>
+<a href="#">Log in</a>
+</li>
+</ul>
+</nav>
+
+<h1 class="hs">Articles</h1>
+<ul id="articles">
+<%@articles.each do |article| %>
+<li>
+<%= link_to article.title, article_path(article), class: "article_title" %>
+</li>
+<%end%>
+</ul>
+
+<%= render partial: 'footer' %>
+

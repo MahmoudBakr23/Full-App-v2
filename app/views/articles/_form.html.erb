@@ -1,0 +1,17 @@
+<%= form_for (@article) do |f| %>
+    <ul>
+    <%@article.errors.full_messages.each do |error|%>
+    <li><%=error%></li>
+    <%end%>
+    </ul>
+    
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    
+    
+    <%= f.label :body %>
+    <%= f.text_area :body%>
+    
+    <%= f.submit "+", class: "btn-floating btn-small waves-effect waves-light red submit"%>
+    
+    <% end %>

@@ -1,0 +1,82 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: start;
+    li {
+        margin: 0;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.btn-floating.btn-small {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.new_article,
+.edit_article {
+    width: 50%;
+    margin: 0 auto;
+
+    #article_title {
+        border-top: 2px solid green;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    textarea {
+        outline: none;
+    }
+}
+
+.hs {
+    margin: 1rem 4rem;
+    font-size: 3rem;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.article_body {
+    text-align: left;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 2px solid green;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+
+    a {
+        background-color: cyan;
+        padding: 0.5rem 1rem;
+        border-radius: 15px;
+        font-size: 1.2rem;
+
+        &:focus {
+            background-color: #555;
+        }
+    }
+}
